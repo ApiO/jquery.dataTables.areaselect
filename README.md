@@ -1,4 +1,4 @@
-# jquery.dataTables.multiselect
+# jquery.dataTables.areaselect
 
 Extension of **[jquery.dataTables](https://www.datatables.net/)** plugin for area selection.
 
@@ -6,7 +6,7 @@ Extension of **[jquery.dataTables](https://www.datatables.net/)** plugin for are
 
 ## Documentation & demo
 
-> For code sample check out the *index.html* file or go to [live demo](http://acuisinier.com/demo/jquery.dataTables.multiselect).
+> For code sample check out the *index.html* file or go to [live demo](http://acuisinier.com/demo/jquery.dataTables.areaselect).
   
 **Minimal browser compatibility**
 
@@ -34,47 +34,42 @@ Safari|v4
 
 ```html
 	<!-- reference both css and js files -->
-    <link href="css/jquery.dataTables.multiselect.css" rel="stylesheet">
-    <script src="js/jquery.dataTables.multiselect.js"></script>
+    <script src="js/jquery.dataTables.areaselect.js"></script>
     
 	<!-- Add a table to your page -->
-	<table id="my_table"></table>
+	<table id="myTable"></table>
  ```
  
 ```javascript
-  $("#my_table")
-      // initializes dataTable as usual
-      .dataTable({
-          data: ...,
-          columns: [ ... ],
-          initComplete: function () {
-              // enables multi selection extension
-              $("#my_table").enableExtendedSelection();
-          }
-      })
-      // binds callback to selection change event
-      .on("selectionChanged.dt", function (event, params) {
-          console.info("Selection", params.data);
-      });
+	// initializes dataTable as usual
+	$("#my_table").dataTable({
+		data: ...,
+		columns: [ ... ],
+		select: true, // Activates Select extension
+		initComplete: function () {
+			// enables area selection extension
+			$("#myTable").AreaSelect();
+		}
+	});
 ```
  
 ```javascript
-	// to get the current selection by code
-	var arr = $("#my_table").data().selection.items;
+	// Select events callback
+	$("#myTable").DataTable()
+		.on("select", function (e, dt, type, indexes) {
+			if (type === "row") {
+		        	var data = $("#myTable").DataTable().rows(indexes).data()[0];
+		        	console.info("select", data);
+		    	}
+		})
+		.on("deselect", function (e, dt, type, indexes) {
+			if (type === "row") {
+				var data = $("#myTable").DataTable().rows(indexes).data();
+				console.info("deselect", data);
+			}
+		});
 ```
- 
-```javascript
-	// Disable/enable multiselection
-	$("#my_table").selectable(false/true);
-```
- 
-  
-**Callback events**
 
-Event | Description
----|---
-selectionChanged.dt|Triggered when the selection changed.
-  
 ## License
 
 Released under the [MIT license](http://www.opensource.org/licenses/MIT).

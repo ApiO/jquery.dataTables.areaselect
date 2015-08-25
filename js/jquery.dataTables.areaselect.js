@@ -178,7 +178,7 @@
 
     //* MAIN *//
 
-    $.fn.AreaSelection = function () {
+    $.fn.AreaSelect = function () {
         if (!$(this).is("table")) {
             console.error("Table element expected");
             return;
