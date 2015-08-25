@@ -22,7 +22,7 @@ Safari|v4
 
 > **jQuery v1.11.3** at least. Works perfectly on higher versions.  
 > **jquery.dataTables v1.10.8** or higher version.
-> **[jquery.dataTables.select extension](https://github.com/DataTables/Select)
+> **[jquery.dataTables.select extension](https://github.com/DataTables/Select)**
 
 
 **Features**
