@@ -42,7 +42,7 @@ Safari|v4
  
 ```javascript
 	// initializes dataTable as usual
-	$("#my_table").dataTable({
+	$("#myTable").dataTable({
 		data: ...,
 		columns: [ ... ],
 		select: true, // Activates Select extension
