@@ -4,6 +4,8 @@ Extension of **[jquery.dataTables](https://www.datatables.net/)** plugin for are
 
 ![](http://acuisinier.com/images/jquery.dataTables.multiselect.png)
 
+[![NuGet](https://img.shields.io/nuget/v/jquery.dataTables.areaselect.svg)](https://www.nuget.org/packages/jquery.dataTables.areaselect) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://opensource.org/licenses/MIT)
+
 ## Documentation & demo
 
 > For code sample check out the *index.html* file or go to [live demo](http://acuisinier.com/demo/jquery.dataTables.areaselect).
