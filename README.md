@@ -1,10 +1,10 @@
 # jquery.dataTables.areaselect
 
+[![NuGet](https://img.shields.io/nuget/v/jquery.dataTables.areaselect.svg)](https://www.nuget.org/packages/jquery.dataTables.areaselect) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://opensource.org/licenses/MIT)
+
 Extension of **[jquery.dataTables](https://www.datatables.net/)** plugin for area selection.
 
 ![](http://acuisinier.com/images/jquery.dataTables.multiselect.png)
-
-[![NuGet](https://img.shields.io/nuget/v/jquery.dataTables.areaselect.svg)](https://www.nuget.org/packages/jquery.dataTables.areaselect) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://opensource.org/licenses/MIT)
 
 ## Documentation & demo
 
