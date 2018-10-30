@@ -35,11 +35,11 @@ Safari|v4
 **Usages**
 
 ```html
-	<!-- reference both css and js files -->
+    <!-- reference both css and js files -->
     <script src="js/jquery.dataTables.areaselect.js"></script>
     
-	<!-- Add a table to your page -->
-	<table id="myTable"></table>
+    <!-- Add a table to your page -->
+    <table id="myTable"></table>
  ```
  
 ```javascript
@@ -72,7 +72,7 @@ Safari|v4
 		});
 ```
 
-##License
+## License
 
 MIT License
 
