@@ -35,41 +35,41 @@ Safari|v4
 **Usages**
 
 ```html
-    <!-- reference both css and js files -->
-    <script src="js/jquery.dataTables.areaselect.js"></script>
+<!-- reference both css and js files -->
+<script src="js/jquery.dataTables.areaselect.js"></script>
     
-    <!-- Add a table to your page -->
-    <table id="myTable"></table>
- ```
- 
-```javascript
-	// initializes dataTable as usual
-	$("#myTable").dataTable({
-		data: ...,
-		columns: [ ... ],
-		select: true, // Activates Select extension
-		initComplete: function () {
-			// enables area selection extension
-			$("#myTable").AreaSelect();
-		}
-	});
+<!-- Add a table to your page -->
+<table id="myTable"></table>
 ```
  
 ```javascript
-	// Select events callback
-	$("#myTable").DataTable()
-		.on("select", function (e, dt, type, indexes) {
-			if (type === "row") {
-		        	var data = $("#myTable").DataTable().rows(indexes).data()[0];
-		        	console.info("select", data);
-		    	}
-		})
-		.on("deselect", function (e, dt, type, indexes) {
-			if (type === "row") {
-				var data = $("#myTable").DataTable().rows(indexes).data();
-				console.info("deselect", data);
-			}
-		});
+// initializes dataTable as usual
+$("#myTable").dataTable({
+    data: ...,
+    columns: [ ... ],
+    select: true, // Activates Select extension
+    initComplete: function () {
+        // enables area selection extension
+	$("#myTable").AreaSelect();
+    }
+});
+```
+ 
+```javascript
+// Select events callback
+$("#myTable").DataTable()
+    .on("select", function (e, dt, type, indexes) {
+	if (type === "row") {
+        	var data = $("#myTable").DataTable().rows(indexes).data()[0];
+        	console.info("select", data);
+    	}
+    })
+    .on("deselect", function (e, dt, type, indexes) {
+	if (type === "row") {
+		var data = $("#myTable").DataTable().rows(indexes).data();
+		console.info("deselect", data);
+	}
+    });
 ```
 
 ## License
