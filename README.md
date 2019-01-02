@@ -4,6 +4,8 @@
 
 Extension of **[jquery.dataTables](https://www.datatables.net/)** plugin for area selection.
 
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FApiO%2FCoordinates.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FApiO%2FCoordinates?ref=badge_large)
+
 ![](http://acuisinier.com/images/jquery.dataTables.multiselect.png)
 
 ## Documentation & demo
